@@ -28,6 +28,7 @@ resource "aws_launch_configuration" "webapp" {
 apt-get update
 apt-get install nginx
 service nginx start
+service nginx enable
     USER_DATA
     lifecycle {
       create_before_destroy = true

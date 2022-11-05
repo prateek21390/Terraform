@@ -1,5 +1,5 @@
 resource "aws_elb" "loadbalancer1" {
-  name = "elb_project"
+  name = "elb-project"
   security_groups = [
     aws_security_group.default.id
   ]
